@@ -1,0 +1,26 @@
+{
+    "brand": "Nexxom",
+    "nav": {
+      "services": "Services",
+      "automation": "Automatisation",
+      "mobileApps": "Applications Mobiles",
+      "cloudSolutions": "Solutions Cloud",
+      "insights": "Aperçus",
+      "blog": "Blog",
+      "contactUs": "Contactez-nous"
+    },
+    "search": {
+      "placeholder": "Rechercher un service...",
+      "noResults": "Aucun service trouvé."
+    },
+    "servicesList": {
+      "home": "Accueil",
+      "automation": "Automatisation",
+      "cloud": "Solutions Cloud",
+      "development": "Développement"
+    },
+    "categories": {
+      "services": "Nos services"
+    }
+  }
+  

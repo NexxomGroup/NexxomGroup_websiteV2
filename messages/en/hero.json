@@ -1,0 +1,47 @@
+{
+  "carousel": {
+    "0": {
+      "title": "Intelligent automation serving businesses",
+      "description": "Optimize your processes, reduce errors, and focus on what truly matters with advanced automation solutions.",
+      "buttons": [
+        {
+          "label": "Learn More",
+          "variant": "default"
+        },
+        {
+          "label": "Request a Demo",
+          "variant": "outline"
+        }
+      ]
+    },
+    "1": {
+      "title": "Streamline your processes with AI-powered workflows",
+      "description": "Transform your workflows with AI to automate repetitive tasks, boost productivity, and accelerate results.",
+      "buttons": [
+        {
+          "label": "Browse Our Solutions",
+          "variant": "default"
+        }
+      ]
+    },
+    "2": {
+      "title": "Customized solutions for your business",
+      "description": "Adopt personalized tools that address your unique needs, fostering growth and innovation.",
+      "buttons": [
+        {
+          "label": "Contact Us",
+          "variant": "default"
+        },
+        {
+          "label": "Get a Quote",
+          "variant": "outline"
+        }
+      ]
+    }
+  },
+  "carouselItems": {
+    "0": "Smart Automation",
+    "1": "Seamless Integration",
+    "2": "Custom Applications"
+  }
+}

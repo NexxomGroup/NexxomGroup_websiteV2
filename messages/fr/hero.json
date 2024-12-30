@@ -1,0 +1,47 @@
+{
+    "carousel": {
+      "0": {
+        "title": "L'automatisation intelligente au service des entreprises",
+        "description": "Optimisez vos processus, réduisez les erreurs et concentrez-vous sur l'essentiel grâce à des solutions avancées d'automatisation.",
+        "buttons": [
+          {
+            "label": "En savoir plus",
+            "variant": "default"
+          },
+          {
+            "label": "Demander une démo",
+            "variant": "outline"
+          }
+        ]
+      },
+      "1": {
+        "title": "Simplifiez vos processus grâce aux workflows IA",
+        "description": "Transformez vos workflows avec l'IA pour automatiser les tâches répétitives, améliorer la productivité et accélérer vos résultats.",
+        "buttons": [
+          {
+            "label": "Parcourir nos solutions",
+            "variant": "default"
+          }
+        ]
+      },
+      "2": {
+        "title": "Des solutions sur mesure pour votre entreprise",
+        "description": "Adoptez des outils personnalisés qui répondent à vos besoins uniques et favorisent la croissance et l'innovation.",
+        "buttons": [
+          {
+            "label": "Contactez-nous",
+            "variant": "default"
+          },
+          {
+            "label": "Obtenir un devis",
+            "variant": "outline"
+          }
+        ]
+      }
+    },
+"carouselItems": {
+  "0": "Automatisation intelligente",
+  "1": "Intégration fluide",
+  "2": "Applications sur mesure"
+}
+  }
