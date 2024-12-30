@@ -7,6 +7,10 @@ import { Button } from "../../ui/button";
 import { Separator } from "../../ui/separator";
 import SearchComponent from "./search";
 import { LangSwitcher } from "./lang-switcher";
+import { Link } from "@/i18n/routing";
+import { useLocale } from "next-intl";
+
+
 
 interface MobileMenuProps {
   navItems: {
@@ -65,6 +69,9 @@ const MobileMenu: React.FC<MobileMenuProps> = ({ navItems, menuOpen, closeMenu }
   };
 
   const currentMenu = menuStack[menuStack.length - 1][1];
+
+
+  const locale = useLocale()
 
   return (
     <div
@@ -133,14 +140,15 @@ const MobileMenu: React.FC<MobileMenuProps> = ({ navItems, menuOpen, closeMenu }
                       <ChevronRight size={24} />
                     </button>
                   ) : (
-                    <a
+                    <Link
+                    locale={locale}
                       key={item.label}
                       href={item.href}
                       className="block text-left hover:text-gray-500"
                       onClick={closeMenu}
                     >
                       {item.label}
-                    </a>
+                    </Link>
                   )
                 )}
               </div>
