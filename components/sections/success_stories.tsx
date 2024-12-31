@@ -1,7 +1,7 @@
 import React from "react";
-import MaxWidth from "../layout/maxWidth";
-import { Button } from "../ui/button";
-import { CarouselNexxom } from "../carousel-nexxom";
+import { CarouselNexxom } from "@/components/carousel-nexxom";
+import MaxWidth from "@/components/layout/maxWidth";
+import { Button } from "@/components/ui/button";
 
 const SuccessStories = () => {
   const stories = [

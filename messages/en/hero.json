@@ -10,7 +10,7 @@
         },
         {
           "label": "Request a Demo",
-          "variant": "outline"
+          "variant": "ghost"
         }
       ]
     },
@@ -34,7 +34,7 @@
         },
         {
           "label": "Get a Quote",
-          "variant": "outline"
+          "variant": "ghost"
         }
       ]
     }

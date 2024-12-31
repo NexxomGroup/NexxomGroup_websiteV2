@@ -7,49 +7,38 @@ const About = () => {
   return (
     <section className="pt-20 pb-16 sm:pt-20 sm:pb-16">
       <MaxWidth>
-      <h2 className="text-3xl sm:text-4xl lg:text-5xl font1 font-normal mb-8 sm:mb-12 text-left">
-              Transforming Businesses, <br />
-              <span className="text-primary">One Solution </span>at a Time
-            </h2>
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-x-20 gap-y-12">
+      
+        <div className="grid grid-cols-1 lg:grid-cols-5 gap-x-20 gap-y-12">
           {/* Left Section */}
           
-          <div className="col-span-1 flex flex-col  items-start">
-
+          <div className="col-span-1 lg:col-span-3 flex flex-col  items-start">
+          <h2 className="text-3xl sm:text-4xl lg:text-3xl font1 font-normal mb-8 sm:mb-12 text-left">
+      En tant qu'architecte digital, Nexxom transforme vos envies de développement en
+              <span className="text-primary"> réalité</span>.
+            </h2>
             <p className="text-sm sm:text-base font2 text-gray-700 mb-4 sm:mb-6 text-left">
-              At Nexxom, we specialize in driving digital transformation with
-              tailor-made solutions that address unique business challenges. We
-              believe that technology should work for you, not the other way
-              around.
+            Chez Nexxom, nous sommes spécialisés dans la conduite de la transformation numérique avec des solutions personnalisées qui répondent aux défis uniques de chaque entreprise. Notre objectif est de dynamiser votre entreprise grâce à la technologie, en favorisant la croissance et l'efficacité.
+Nous livrons des solutions numériques innovantes, des systèmes évolutifs et une approche axée sur les résultats pour garantir votre succès.
             </p>
-            <p className="text-sm sm:text-base font2 text-gray-700 mb-4 sm:mb-14 text-left">
-              We deliver{" "}
-              <span className="text-primary">innovative digital</span>{" "}
-              solutions, <span className="text-primary">scalable systems</span>,
-              and a{" "}
-              <span className="text-primary">business-centric approach</span>{" "}
-              to drive your success.
+            <p className="text-sm sm:text-base font2 text-gray-700 mb-4 sm:mb-6 text-left">
+            Nous livrons des solutions numériques innovantes, des systèmes évolutifs et une approche axée sur les résultats pour garantir votre succès.
             </p>
 
-            <div className="flex justify-center lg:justify-start">
-              <Button variant={"outline"} className="mt-4">
-                Start Your Transformation Today
-              </Button>
-            </div>
+
           </div>
 
           {/* Right Section */}
-          <div className="col-span-1 relative w-full lg:w-full h-96 sm:h-80 lg:h-72 rounded-lg overflow-hidden">
+          <div className="col-span-1 lg:col-span-2 relative w-full lg:w-full h-96 sm:h-80 lg:h-72 rounded-lg overflow-hidden">
             <img
               src="/x-mountain.png"
               alt="About Us"
               className="absolute inset-0 w-full h-full object-cover object-right"
             />
             <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent"></div>
-            <h3 className="absolute bottom-4 left-4 text-white text-sm lg:text-xl font-medium">
+            <h3 className="absolute bottom-4 left-4 text-white text-sm lg:text-sm font-medium">
               Innovation Meets Excellence
             </h3>
-            <div className="flex absolute bottom-0 right-0 text-primary-foreground items-center p-4 sm:p-6 bg-primary/20 text-sm sm:text-base">
+            <div className="flex absolute bottom-0 right-0 text-primary-foreground items-center p-3 sm:p-4 bg-primary/20 text-xs sm:text-sm">
               Voir l&apos;article
               <LucideSquareArrowOutUpRight className="ml-1 mt-0.5 h-4 sm:h-5" />
             </div>

@@ -7,33 +7,6 @@ import MaxWidth from "../../layout/maxWidth";
 import { Button } from "../../ui/button";
 import { Separator } from "@/components/ui/separator";
 
-interface AnimatedNumberProps {
-  value: number;
-}
-
-const AnimatedNumber: React.FC<AnimatedNumberProps> = ({ value }) => {
-  const [displayValue, setDisplayValue] = useState(0);
-
-  useEffect(() => {
-    const animation = { start: 0, end: value };
-    const duration = 1.5; // Duration of the animation in seconds
-
-    let startTimestamp: number | null = null;
-
-    const step = (timestamp: number) => {
-      if (!startTimestamp) startTimestamp = timestamp;
-      const progress = Math.min((timestamp - startTimestamp) / (duration * 1000), 1);
-      setDisplayValue(Math.floor(progress * (animation.end - animation.start) + animation.start));
-      if (progress < 1) {
-        requestAnimationFrame(step);
-      }
-    };
-
-    requestAnimationFrame(step);
-  }, [value]);
-
-  return <span>{displayValue}</span>;
-};
 
 const ServiceHero: React.FC = () => {
   return (
@@ -62,31 +35,36 @@ const ServiceHero: React.FC = () => {
             </div>
           </div>
         </MaxWidth>
-        <div className=" absolute bottom-0 py-8 h-44 w-full bg-white/80 backdrop-blur-lg">
+        <div className=" absolute bottom-0 py-8  w-full bg-white/80 backdrop-blur-lg">
           <MaxWidth>
-            <div className="grid grid-cols-3 gap-4">
+            <div className="flex h-24 justify-between items-center  ">
               <div>
-                <h1 className="font1 text-5xl font-medium">
-                  <AnimatedNumber value={30} />%
+                <h1 className="font1 text-md lg:text-2xl font-medium ">
+                  Operational Efficiency
                 </h1>
-                <p className=" max-w-64">
-                  Average savings in operational costs with automation.
+                
+                <p className=" max-w-72 text-xs lg:text-sm">
+                  30% savings in operational costs through automation.
                 </p>
               </div>
+              <Separator className="bg-black ml-4 mr-8"  orientation="vertical" />
+
               <div>
-                <h1 className="font1 text-5xl font-medium">
-                  <AnimatedNumber value={24} />/<AnimatedNumber value={7} />
+                <h1 className="font1 text-md lg:text-2xl font-medium ">
+                  Around-the-clock reliability
                 </h1>
-                <p className=" max-w-64">
-                  Efficiency: Never stop running your business.
+                <p className=" max-w-72 text-xs lg:text-sm">
+                  24/7 efficiency: Keep your business running seamlessly.
                 </p>
               </div>
+              <Separator className="bg-black ml-4 mr-8"  orientation="vertical" />
+
               <div>
-                <h1 className="font1 text-5xl font-medium">
-                  <AnimatedNumber value={80} />%
+                <h1 className="font1 text-md lg:text-2xl font-medium ">
+                  Streamlined Processes
                 </h1>
-                <p className=" max-w-64">
-                  Reduction in manual processing time.
+                <p className=" max-w-72 text-xs lg:text-sm">
+                  80% reduction in manual processing time.
                 </p>
               </div>
             </div>
@@ -108,7 +86,9 @@ const ServiceHero: React.FC = () => {
                 Turning automation into growth
               </h2>
             </div>
-            <Separator orientation="vertical" />
+            <div className="h-full py-4">
+            <Separator  orientation="vertical" />
+            </div>
             <div className="w-full flex-col items-center justify-center px-12">
               <p className="text-center text-primary-foreground">
                 "The first rule of any technology used in a business is that

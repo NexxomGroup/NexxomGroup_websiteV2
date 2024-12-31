@@ -5,7 +5,7 @@ import { Button } from "../ui/button";
 const ImageBackgroundSection = () => {
   return (
     <section className="mt-28">
-          <MaxWidth className="relative w-full h-80 flex items-center justify-center">
+          <MaxWidth className="relative w-full h-72 flex items-center justify-center">
       {/* Background Image */}
       <div
         className="absolute inset-0"
@@ -16,15 +16,15 @@ const ImageBackgroundSection = () => {
         }}
       >
         {/* Filter Overlay */}
-        <div className="absolute inset-0 bg-black bg-opacity-30"></div>
+        <div className="absolute inset-0 bg-gradient-to-t from-primary/30  to-black/70 "></div>
       </div>
 
       {/* Text Content */}
       <div className="relative z-10 text-center text-white max-w-3xl">
-        <h1 className=" font1 text-3xl md:text-6xl font-bold mb-4">
+        <h1 className=" font1 text-3xl md:text-4xl font-bold mb-4">
         Bring the future to now.
         </h1>
-        <p className="text-base md:text-lg font1 mb-6 px-8">
+        <p className="text-base md:text-md font1 mb-6 px-8">
           This is your space to inspire, inform, and engage your audience with a
           compelling message.
         </p>

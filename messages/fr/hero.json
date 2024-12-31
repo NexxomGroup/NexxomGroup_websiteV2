@@ -10,7 +10,7 @@
           },
           {
             "label": "Demander une démo",
-            "variant": "outline"
+            "variant": "ghost"
           }
         ]
       },
@@ -34,7 +34,7 @@
           },
           {
             "label": "Obtenir un devis",
-            "variant": "outline"
+            "variant": "ghost"
           }
         ]
       }
