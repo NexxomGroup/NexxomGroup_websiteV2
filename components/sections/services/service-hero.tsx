@@ -79,10 +79,10 @@ const ServiceHero: React.FC = () => {
         }}
         className="relative flex items-center bg-no-repeat bg-cover bg-center "
       >
-        <MaxWidth className="relative flex pt-40 md:pt-0 items-start md:items-center min-h-[200px]">
+        <MaxWidth className="relative flex  md:pt-0 items-start md:items-center min-h-[200px]">
           <div className="flex h-full justify-center items-center">
-            <div className="px-8">
-              <h2 className="font1 text-2xl font-semibold text-primary-foreground w-60">
+            <div className="px-2">
+              <h2 className="font1 text-2xl font-semibold text-primary-foreground ">
                 Turning automation into growth
               </h2>
             </div>
@@ -90,7 +90,7 @@ const ServiceHero: React.FC = () => {
             <Separator  orientation="vertical" />
             </div>
             <div className="w-full flex-col items-center justify-center px-12">
-              <p className="text-center text-primary-foreground">
+              <p className=" text-xs sm:text-base text-center text-primary-foreground">
                 "The first rule of any technology used in a business is that
                 automation applied to an efficient operation will magnify the
                 efficiency."

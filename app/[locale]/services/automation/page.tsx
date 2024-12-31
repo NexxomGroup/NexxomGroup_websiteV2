@@ -7,6 +7,7 @@ import React from 'react'
 import CallToAction from "@/components/sections/callToAction";
 import ServiceImpactfulJourney from '@/components/sections/services/service-impactful-journey'
 import ServiceSuccessStories from '@/components/sections/services/service-success'
+import Timeline from '@/components/sections/services/timeline'
 
 const Service = () => {
 
@@ -19,6 +20,7 @@ const Service = () => {
 
         <ServiceSuccessStories />
         <ServiceImpactfulJourney/>
+        <Timeline/>
         <CallToAction />
     
 
