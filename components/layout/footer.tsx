@@ -8,7 +8,7 @@ import { FaLinkedin } from "react-icons/fa";
 
 const Footer = () => {
   return (
-    <footer className="mt-28  w-full bg-black/80">
+    <footer className="mt-28  w-full bg-zinc-900">
       <MaxWidth className="w-full  ">
         <div className="relative w-full py-12 flex flex-col space-y-5 md:flex-row justify-between items-center ">
           <div className="  pb-4 pt-2 md:p-0 md:bg-transparent">

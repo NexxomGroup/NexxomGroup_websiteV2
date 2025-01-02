@@ -119,6 +119,7 @@ const Hero = () => {
           {/* Animated Title */}
           <h1 className="text-4xl md:text-4xl lg:text-5xl xl:text-6xl text-primary-foreground font1 font-medium">
             <FlipWords
+            className=" -ml-1"
               key={currentImageIndex}          // Force re-render on slide change
               words={[currentSlide.title]}      // Show only current slide title
               duration={carouselSpeed}          // Sync with carousel speed

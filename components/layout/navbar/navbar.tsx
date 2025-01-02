@@ -65,12 +65,19 @@ const Navbar = () => {
     <header
       className={`fixed top-0 left-0 w-full z-50 transition-all duration-300 ${
         isScrolled
-          ? "bg-black/80 text-white shadow-lg py-5 border-b border-black/80 "
-          : "bg-transparent text-white py-4 border-b border-white/50 "
+          ? "bg-zinc-900 text-white shadow-lg   "
+          : "bg-transparent text-white    "
       }`}
     >
       <MaxWidth>
-        <nav className="flex items-center justify-between">
+        <nav className="flex items-center justify-between relative h-full  py-7 ">
+          <div className={`absolute w-full bottom-0 bg-primary-foreground/50 h-0.5${
+        isScrolled
+          ? "bg-primary-foreground/0  transition-all duration-300"
+          : "  "
+      }`}
+      
+      ></div>
           {/* Logo */}
           <div className="flex items-center">
             <a href="/">

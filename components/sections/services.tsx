@@ -9,8 +9,6 @@ const Services = () => {
     { title: 'Integration', image: '/hero3.png' },
     { title: 'Support', image: '/services4.jpg' },
     { title: 'Automation', image: '/services5.jpg' },
-    
-    
   ];
 
   return (
@@ -23,24 +21,33 @@ const Services = () => {
           {services.map((service, index) => (
             <div
               key={index}
-              className="relative  sm:skew-x-0 h-40 overflow-hidden rounded-lg group"
-              style={{ backgroundImage: `url(${service.image})`, backgroundSize: 'cover', backgroundPosition: 'center' }}
+              className="relative h-40 overflow-hidden rounded-lg group"
             >
+              {/* Conteneur de l'image avec l'effet de zoom */}
+              <div
+                className="absolute inset-0 bg-cover bg-center transition-transform duration-700 group-hover:scale-110"
+                style={{ backgroundImage: `url(${service.image})` }}
+              ></div>
+
+              {/* Overlay gradient avec filtre de couleur */}
               <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent group-hover:from-black/50 transition duration-300"></div>
-              <h2 className="absolute  bottom-4 left-4 text-white text-xl font-bold z-10">
+
+              {/* Filtre de couleur primaire (appliqué au hover) */}
+              <div className="absolute inset-0 bg-primary/20 opacity-0 group-hover:opacity-100 transition duration-300"></div>
+
+              {/* Titre du service */}
+              <h2 className="absolute bottom-4 left-4 text-white text-xl font-bold z-10">
                 {service.title}
               </h2>
 
-              <div className='absolute md:hidden -skew-x-12 right-12 h-full w-6 bg-white/20'></div>
-
+              {/* Décoration supplémentaire */}
+              <div className="absolute md:hidden -skew-x-12 right-12 h-full w-6 bg-white/20"></div>
             </div>
           ))}
-          {/*
-          <div className="relative h-40 overflow-hidden rounded-lg bg-gray-100/10 flex items-center justify-center">
+          {/* Bouton "Voir tout" (commenté pour l'instant) */}
+          {/* <div className="relative h-40 overflow-hidden rounded-lg bg-gray-100/10 flex items-center justify-center">
             <Button className="text-lg">Voir tout</Button>
-          </div>
-          */}
-
+          </div> */}
         </div>
       </MaxWidth>
     </section>
