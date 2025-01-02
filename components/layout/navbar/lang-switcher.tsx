@@ -17,8 +17,8 @@ import { ChevronDown } from "lucide-react";
  * label: texte affiché dans le menu
  */
 const LANGUAGES = [
-  { code: "en", label: "English" },
-  { code: "fr", label: "Français" },
+  { code: "en", label: "English", disabled: true },
+  { code: "fr", label: "Français", disabled: false },
 ];
 
 // Si vous avez un mapping de routes plus complexe, vous pouvez adapter

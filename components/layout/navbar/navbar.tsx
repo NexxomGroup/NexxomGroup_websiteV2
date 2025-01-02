@@ -141,7 +141,7 @@ const Navbar: React.FC = () => {
           </div>
 
           <div className="text-accent-foreground hidden lg:flex">
-            <LangSwitcher />
+            {/* <LangSwitcher /> */}
             <SearchComponent />
           </div>
 
