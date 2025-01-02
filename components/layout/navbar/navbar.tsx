@@ -125,7 +125,7 @@ const Navbar: React.FC = () => {
                 className="hidden md:block"
                 src="/nexxom.png"
                 alt={t("brand")}
-                width={150}
+                width={120}
                 height={40}
               />
               <Image
